@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Anisha 🎂</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-intro">
+
+<!-- ============================================================
+     INTRO
+     ============================================================ -->
+<section id="screen-intro" class="screen is-active" aria-hidden="false">
+  <div class="intro-stage">
+    <div class="intro-bars" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="intro-glyph">N</div>
+    <div class="intro-caption">A LOVE STORY &middot; STREAMING NOW</div>
+    <div class="intro-hint">tap anywhere to continue</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROFILE PICKER
+     ============================================================ -->
+<section id="screen-profiles" class="screen" aria-hidden="true">
+  <div class="profiles-wrap">
+    <h1>Who's celebrating?</h1>
+    <p class="sub">Choose a profile to continue</p>
+    <div class="profiles-grid">
+      <button type="button" class="profile-tile" data-target="netflix">
+        <span class="profile-avatar"><img src="assets/img/avatar-happy.jpg" alt=""></span>
+        <span class="name">Happy</span>
+      </button>
+      <button type="button" class="profile-tile" data-target="spotify">
+        <span class="profile-avatar"><img src="assets/img/avatar-birthday.jpg" alt=""></span>
+        <span class="name">Birthday</span>
+      </button>
+      <button type="button" class="profile-tile" data-target="instagram">
+        <span class="profile-avatar"><img src="assets/img/avatar-anisha.jpg" alt=""></span>
+        <span class="name">AnishaBaby</span>
+      </button>
+      <button type="button" class="profile-tile" id="add-profile-tile">
+        <span class="profile-avatar add-tile">
+          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="#808080" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </span>
+        <span class="name">Add Profile</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NETFLIX — Account: Happy
+     ============================================================ -->
+<section id="screen-netflix" class="screen" aria-hidden="true">
+  <button type="button" class="back-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>Profiles</button>
+
+  <nav class="nx-nav">
+    <div class="nx-logo">NETFLIX</div>
+    <div class="nx-nav-avatar"><img src="assets/img/avatar-happy.jpg" alt=""></div>
+  </nav>
+
+  <div class="nx-hero">
+    <video id="hero-video" muted loop playsinline autoplay poster="assets/img/n1.jpg">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="nx-hero-content">
+      <div class="nx-tag">
+        <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.2H22l-6 4.4 2.4 7.2L12 16.4 5.6 20.8 8 13.6l-6-4.4h7.6z"/></svg>
+        N ORIGINAL &middot; ANISHA'S STORY
+      </div>
+      <h1 class="nx-title">Happy Birthday,<br>Anisha</h1>
+      <div class="nx-meta">
+        <span class="pill">2026</span>
+        <span>Romance</span>
+        <span>Comfort Watch</span>
+        <span class="pill">1 Season+</span>
+      </div>
+      <p class="nx-logline">A real-life story about two people who keep choosing each other, one ordinary day at a time.</p>
+      <div class="nx-btn-row">
+        <button type="button" class="nx-btn primary" id="nx-play-btn"><svg viewBox="0 0 24 24" fill="#000"><path d="M8 5v14l11-7z"/></svg>Play</button>
+        <button type="button" class="nx-btn secondary" id="nx-info-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="11" x2="12" y2="16"/><circle cx="12" cy="8" r="1" fill="#fff" stroke="none"/></svg>More Info</button>
+      </div>
+    </div>
+    <button type="button" class="nx-mute" id="nx-mute-btn" aria-label="Toggle sound">
+      <svg viewBox="0 0 24 24" fill="#fff"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16.5 12a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>
+    </button>
+  </div>
+
+  <div class="nx-row">
+    <h2>Our Story</h2>
+    <div class="nx-cards">
+      <div class="nx-card"><img src="assets/img/n1.jpg" alt=""><div class="nx-card-label">Where It Began</div></div>
+      <div class="nx-card"><img src="assets/img/n2.jpg" alt=""><div class="nx-card-label">Rooftop Nights</div></div>
+      <div class="nx-card"><img src="assets/img/n3.jpg" alt=""><div class="nx-card-label">Table For Two</div></div>
+      <div class="nx-card"><img src="assets/img/n4.jpg" alt=""><div class="nx-card-label">Golden Hour</div></div>
+      <div class="nx-card stylized">
+        <div class="inner">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+          <div class="t">Season 2</div>
+          <div class="s">Coming Soon</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nx-about" id="nx-about-card">
+    <div class="nx-ribbon">🎂 Happy Birthday</div>
+    <p class="kicker">About this story</p>
+    <p>Our life has been like a Netflix series — the ups and downs we've had, and we still somehow always come back to each other. I never thought a person could feel like home, but you do. You have no idea how much you mean to me.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     SPOTIFY — Account: Birthday
+     ============================================================ -->
+<section id="screen-spotify" class="screen" aria-hidden="true">
+  <button type="button" class="back-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>Profiles</button>
+  <div class="hearts-layer" id="hearts-layer" aria-hidden="true"></div>
+
+  <div class="sp-header">
+    <div class="sp-cover">
+      <img src="assets/img/s1.jpg" alt="">
+      <img src="assets/img/s2.jpg" alt="">
+      <img src="assets/img/s3.jpg" alt="">
+      <img src="assets/img/s4.jpg" alt="">
+    </div>
+    <div class="sp-header-text">
+      <p class="sp-kicker">🎂 Playlist</p>
+      <h1 class="sp-title">Happy Birthday<br>Anisha</h1>
+      <p class="sp-subline"><b>For Anisha</b> &middot; 5 songs &middot; made with love</p>
+    </div>
+  </div>
+
+  <div class="sp-controls">
+    <button type="button" class="sp-play" aria-label="Play"><svg viewBox="0 0 24 24" fill="#121212"><path d="M8 5v14l11-7z"/></svg></button>
+  </div>
+
+  <div class="sp-tracklist">
+    <div class="sp-track">
+      <div class="idx">1</div>
+      <div class="art"><img src="assets/img/s1.jpg" alt=""></div>
+      <div class="names"><p class="t-name">Premmatal</p><p class="t-artist">Us</p></div>
+      <div class="side"><button type="button" class="sp-heart-btn" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 6 4 4 8-2.5 4.65-9.5 9-9.5 9z"/></svg></button><span>3:41</span></div>
+    </div>
+    <div class="sp-track">
+      <div class="idx">2</div>
+      <div class="art"><img src="assets/img/s2.jpg" alt=""></div>
+      <div class="names"><p class="t-name">Bolona</p><p class="t-artist">Us</p></div>
+      <div class="side"><button type="button" class="sp-heart-btn" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 6 4 4 8-2.5 4.65-9.5 9-9.5 9z"/></svg></button><span>4:02</span></div>
+    </div>
+    <div class="sp-track">
+      <div class="idx">3</div>
+      <div class="art"><img src="assets/img/s3.jpg" alt=""></div>
+      <div class="names"><p class="t-name">I Love You</p><p class="t-artist">Us</p></div>
+      <div class="side"><button type="button" class="sp-heart-btn" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 6 4 4 8-2.5 4.65-9.5 9-9.5 9z"/></svg></button><span>2:58</span></div>
+    </div>
+    <div class="sp-track">
+      <div class="idx">4</div>
+      <div class="art"><img src="assets/img/s4.jpg" alt=""></div>
+      <div class="names"><p class="t-name">Bhalobasha Baki</p><p class="t-artist">Us</p></div>
+      <div class="side"><button type="button" class="sp-heart-btn" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 6 4 4 8-2.5 4.65-9.5 9-9.5 9z"/></svg></button><span>3:15</span></div>
+    </div>
+    <div class="sp-track">
+      <div class="idx">5</div>
+      <div class="art vinyl"><svg viewBox="0 0 24 24" fill="#1db954"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="names"><p class="t-name">November Rain</p><p class="t-artist">Us</p></div>
+      <div class="side"><button type="button" class="sp-heart-btn" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 6 4 4 8-2.5 4.65-9.5 9-9.5 9z"/></svg></button><span>8:57</span></div>
+    </div>
+  </div>
+
+  <div class="sp-note">
+    <span class="badge">🎂 Happy Birthday</span>
+    <p>Every song reminds me of you. I can't even listen to music without imagining you. Thank you for coming into this world and blessing me with your love — I love you so, so, so much.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     INSTAGRAM — Account: AnishaBaby
+     ============================================================ -->
+<section id="screen-instagram" class="screen" aria-hidden="true">
+  <button type="button" class="back-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>Profiles</button>
+
+  <div class="ig-topbar"><div class="ig-wordmark">Instagram</div></div>
+
+  <div class="ig-profile-row">
+    <div class="ig-profile-pic"><img src="assets/img/avatar-anisha.jpg" alt=""></div>
+    <div class="ig-profile-meta">
+      <p class="ig-username">anisha.baby</p>
+      <p class="ig-bio">🎂 today's the day &middot; forever grateful for my person</p>
+    </div>
+  </div>
+  <div class="ig-stats">
+    <div><b>6</b> posts</div>
+    <div><b>1</b> person</div>
+    <div><b>&infin;</b> love</div>
+  </div>
+
+  <div class="ig-highlights">
+    <div class="ig-highlight">
+      <div class="ig-h-ring"><div class="ig-h-inner">🎂</div></div>
+      <span>Bday</span>
+    </div>
+  </div>
+
+  <div class="ig-feed">
+
+    <article class="ig-post">
+      <div class="ig-post-head">
+        <div class="ig-post-avatar"><img src="assets/img/avatar-anisha.jpg" alt=""></div>
+        <div class="ig-post-user">anisha.baby</div>
+        <div class="ig-post-dots">&middot;&middot;&middot;</div>
+      </div>
+      <div class="ig-post-media"><img src="assets/img/ig1.jpg" alt=""></div>
+      <div class="ig-actions">
+        <button type="button" class="like-btn" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 6 4 4 8-2.5 4.65-9.5 9-9.5 9z"/></svg></button>
+        <button type="button" aria-label="Comment"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H6l-3 3v-6.6A8.5 8.5 0 1 1 21 11.5z"/></svg></button>
+        <button type="button" aria-label="Share"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+        <button type="button" class="save" aria-label="Save"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1z"/></svg></button>
+      </div>
+      <p class="ig-likes" data-base="1204">1,204 likes</p>
+      <p class="ig-caption"><b>anisha.baby</b>you feel like a dream come true</p>
+      <p class="ig-time">2 hours ago</p>
+    </article>
+
+    <article class="ig-post">
+      <div class="ig-post-head">
+        <div class="ig-post-avatar"><img src="assets/img/avatar-anisha.jpg" alt=""></div>
+        <div class="ig-post-user">anisha.baby</div>
+        <div class="ig-post-dots">&middot;&middot;&middot;</div>
+      </div>
+      <div class="ig-post-media"><img src="assets/img/ig2.jpg" alt=""></div>
+      <div class="ig-actions">
+        <button type="button" class="like-btn" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 6 4 4 8-2.5 4.65-9.5 9-9.5 9z"/></svg></button>
+        <button type="button" aria-label="Comment"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H6l-3 3v-6.6A8.5 8.5 0 1 1 21 11.5z"/></svg></button>
+        <button type="button" aria-label="Share"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+        <button type="button" class="save" aria-label="Save"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1z"/></svg></button>
+      </div>
+      <p class="ig-likes" data-base="986">986 likes</p>
+      <p class="ig-caption"><b>anisha.baby</b>your presence lights up my world</p>
+      <p class="ig-time">5 hours ago</p>
+    </article>
+
+    <article class="ig-post">
+      <div class="ig-post-head">
+        <div class="ig-post-avatar"><img src="assets/img/avatar-anisha.jpg" alt=""></div>
+        <div class="ig-post-user">anisha.baby</div>
+        <div class="ig-post-dots">&middot;&middot;&middot;</div>
+      </div>
+      <div class="ig-post-media"><img src="assets/img/ig3.jpg" alt=""></div>
+      <div class="ig-actions">
+        <button type="button" class="like-btn" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 6 4 4 8-2.5 4.65-9.5 9-9.5 9z"/></svg></button>
+        <button type="button" aria-label="Comment"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H6l-3 3v-6.6A8.5 8.5 0 1 1 21 11.5z"/></svg></button>
+        <button type="button" aria-label="Share"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+        <button type="button" class="save" aria-label="Save"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1z"/></svg></button>
+      </div>
+      <p class="ig-likes" data-base="1532">1,532 likes</p>
+      <p class="ig-caption"><b>anisha.baby</b>you make me feel safe</p>
+      <p class="ig-time">1 day ago</p>
+    </article>
+
+    <article class="ig-post">
+      <div class="ig-post-head">
+        <div class="ig-post-avatar"><img src="assets/img/avatar-anisha.jpg" alt=""></div>
+        <div class="ig-post-user">anisha.baby</div>
+        <div class="ig-post-dots">&middot;&middot;&middot;</div>
+      </div>
+      <div class="ig-post-media"><img src="assets/img/ig4.jpg" alt=""></div>
+      <div class="ig-actions">
+        <button type="button" class="like-btn" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 6 4 4 8-2.5 4.65-9.5 9-9.5 9z"/></svg></button>
+        <button type="button" aria-label="Comment"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H6l-3 3v-6.6A8.5 8.5 0 1 1 21 11.5z"/></svg></button>
+        <button type="button" aria-label="Share"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+        <button type="button" class="save" aria-label="Save"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1z"/></svg></button>
+      </div>
+      <p class="ig-likes" data-base="2048">2,048 likes</p>
+      <p class="ig-caption"><b>anisha.baby</b>i love you so muchh</p>
+      <p class="ig-time">2 days ago</p>
+    </article>
+
+    <article class="ig-post">
+      <div class="ig-post-head">
+        <div class="ig-post-avatar"><img src="assets/img/avatar-anisha.jpg" alt=""></div>
+        <div class="ig-post-user">anisha.baby</div>
+        <div class="ig-post-dots">&middot;&middot;&middot;</div>
+      </div>
+      <div class="ig-post-media"><img src="assets/img/ig5.jpg" alt=""></div>
+      <div class="ig-actions">
+        <button type="button" class="like-btn" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 6 4 4 8-2.5 4.65-9.5 9-9.5 9z"/></svg></button>
+        <button type="button" aria-label="Comment"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H6l-3 3v-6.6A8.5 8.5 0 1 1 21 11.5z"/></svg></button>
+        <button type="button" aria-label="Share"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+        <button type="button" class="save" aria-label="Save"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1z"/></svg></button>
+      </div>
+      <p class="ig-likes" data-base="1377">1,377 likes</p>
+      <p class="ig-caption"><b>anisha.baby</b>Thank you Allah for putting this princess in my life</p>
+      <p class="ig-time">3 days ago</p>
+    </article>
+
+    <article class="ig-post">
+      <div class="ig-post-head">
+        <div class="ig-post-avatar"><img src="assets/img/avatar-anisha.jpg" alt=""></div>
+        <div class="ig-post-user">anisha.baby</div>
+        <div class="ig-post-dots">&middot;&middot;&middot;</div>
+      </div>
+      <div class="ig-post-media"><img src="assets/img/ig6-family.jpg" alt=""></div>
+      <div class="ig-actions">
+        <button type="button" class="like-btn" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.5 8 2.5 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 6 4 4 8-2.5 4.65-9.5 9-9.5 9z"/></svg></button>
+        <button type="button" aria-label="Comment"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H6l-3 3v-6.6A8.5 8.5 0 1 1 21 11.5z"/></svg></button>
+        <button type="button" aria-label="Share"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+        <button type="button" class="save" aria-label="Save"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1z"/></svg></button>
+      </div>
+      <p class="ig-likes" data-base="3241">3,241 likes</p>
+      <p class="ig-caption"><b>anisha.baby</b>THANK YOU AUNTY THE GOAT FOR BRINGING YOU TO MY LIFEEE</p>
+      <p class="ig-time">1 week ago</p>
+    </article>
+
+  </div>
+</section>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
